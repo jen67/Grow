@@ -80,5 +80,5 @@ def leaderboard(request):
         .annotate(total_score=Sum('submissions__score'))
         .order_by('-total_score')
     )
-    return render(request, 'jobtest/leaderboard.html', {'data_board': data_board}
+    return render(request, 'jobtest/leaderboard.html', {'data_board': data_board})
 
