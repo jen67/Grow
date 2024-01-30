@@ -43,6 +43,8 @@ class Submission(models.Model):
     """Tracks what user submitted"""
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     test = models.ForeignKey(Test, on_delete=models.CASCADE)
+    answer = models.TextField(max_length=255)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, default=None, null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     score = models.IntegerField()
 

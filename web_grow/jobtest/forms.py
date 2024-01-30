@@ -1,5 +1,10 @@
 from django import forms
+from .models import Submission
 
 
-def SubmissionForm(forms.Form):
-    answer = forms.CharField(label='Your Answer', max_length=100)
+class SubmissionForm(forms.ModelForm):
+    """Submits answers."""
+    class Meta:
+        model = Submission
+        fields = ['user', 'test', 'timestamp', 'score', 'answer', 'question']
+        exclude = ['timestamp']
