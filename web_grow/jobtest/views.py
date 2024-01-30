@@ -60,7 +60,7 @@ def dashboard(request):
             return redirect('dashboard')
     else:
         form = AnswerSubmissionForm()
-    return render(request, 'dashboard.html', {'form': form})
+    return render(request, 'jobtest/dashboard.html', {'form': form})
 
 def test_list(request):
     """
