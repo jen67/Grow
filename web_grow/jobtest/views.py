@@ -20,6 +20,14 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     return HttpResponse("Hi, you're at the job test index.")
 
+def homepage(request):
+    """Homepage for Grow"""
+    tests = Test.objects.all()
+    homepage_items = {
+        'tests': tests,
+    }
+    return render(request, 'homepage.html', homepage_items)
+
 def register(request):
     """register new users"""
     if request.method == 'POST':
