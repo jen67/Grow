@@ -1,11 +1,18 @@
+import Navbar from './components/Navbar';
+import MyFigure from './components/MyFigure';
+import MySection from './components/MySection';
+
 import './App.css';
 
 function App() {
   return (
-	  <div>
-	  <h1> Hello world! </h1>
-	  <p> This is Grow Test page </p>
-	  </div>
+    <>
+    <Navbar />
+    <main>
+      <MyFigure />
+      <MySection />
+    </main>
+    </>
   );
 }
 
