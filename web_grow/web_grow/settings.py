@@ -58,13 +58,13 @@ CORS_ALLOW_ALL_ORIGINS = True
 ROOT_URLCONF = 'web_grow.urls'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'jobtest-frontend/build/static'),
+    os.path.join(BASE_DIR, 'jobtest/templates/react-build/static'),
 ]
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'jobtest-frontend/build')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
