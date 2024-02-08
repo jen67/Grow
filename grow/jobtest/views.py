@@ -17,3 +17,6 @@ class QuestionView(viewsets.ModelViewSet):
 class SubmissionView(viewsets.ModelViewSet):
     queryset = Submission.objects.all()
     serializer_class = SubmissionSerializer
+
+def index(request):
+    return render(request, 'index.html')
