@@ -59,7 +59,7 @@ ROOT_URLCONF = 'grow.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,15 +122,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Define the directory where Django will collect static files during deployment
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Additional directories where static files are located
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/static/build/static'),
+    os.path.join(BASE_DIR, 'jobtest', 'templates', 'static'),
 ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000'
-]
