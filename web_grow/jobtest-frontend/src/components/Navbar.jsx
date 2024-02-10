@@ -8,7 +8,7 @@ function Navbar() {
     setNav(!nav);
   }
   return (
-    <nav className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white cursor-pointer">
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white cursor-pointer">
       <header className="w-full text-3xl font-bold text-[#00df9a]">
         Grow App &#8805;
       </header>
@@ -36,7 +36,7 @@ function Navbar() {
           <li className="p-4">Contact</li>
         </ul>
       </div>
-    </nav>
+    </div>
   );
 }
 
