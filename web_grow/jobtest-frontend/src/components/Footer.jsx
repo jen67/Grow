@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -8,6 +9,26 @@ function Footer() {
           Grow App &#8805;
         </header>
         <p className="py-4">Elevating Developers for Success in Interviews</p>
+        <div className="flex justify-btween md:w-[75%] my-6">
+          <a href="http://github.com/jen67">
+            <button className=" mx-2 bg-[#00df9a] w-[100px] rounded-md text-black font-medium">
+              <FaGithub size={28} />
+              Gift{" "}
+            </button>
+          </a>
+          <a href="http://github.com/Eniola011">
+            <button className=" mx-2 bg-[#00df9a] w-[100px] rounded-md text-black font-medium">
+              <FaGithub size={28} />
+              Eniola{" "}
+            </button>
+          </a>
+          <a href="http://github.com/Just337ine">
+            <button className=" mx-2 bg-[#00df9a] w-[120px] rounded-md text-black font-medium">
+              <FaGithub size={28} />
+              Justine{" "}
+            </button>
+          </a>
+        </div>
       </div>
 
       <div className="lg:col-span-2 flex justify-between lg:mt-6">
