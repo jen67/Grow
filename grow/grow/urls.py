@@ -19,17 +19,25 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
 from rest_framework import routers
-from jobtest import views
+from jobtest import views as jobtest_views
+from accounts import views as accounts_views
 
 router = routers.DefaultRouter()
-router.register(r'tests', views.TestView, 'test')
-router.register(r'questions', views.QuestionView, 'question')
-router.register(r'submissions', views.SubmissionView, 'submission')
+router.register(r'tests', jobtest_views.TestView, 'test')
+router.register(r'questions', jobtest_views.QuestionView, 'question')
+router.register(r'submissions', jobtest_views.SubmissionView, 'submission')
+router.register(r'userprofiles', accounts_views.UserProfileViewSet)
+router.register(r'userstatistics', accounts_views.UserStatisticsViewSet)
+router.register(r'userpreferences', accounts_views.UserPreferencesViewSet)
+router.register(r'usersubscriptions', accounts_views.UserSubscriptionViewSet)
+router.register(r'useractivitylogs', accounts_views.UserActivityLogViewSet)
+router.register(r'userfeedbacks', accounts_views.UserFeedbackViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('', views.index, name='index')
+    path('', jobtest_views.index, name='index'),
+    path('accounts/', include('accounts.urls')),
 ]
 
 if settings.DEBUG:
