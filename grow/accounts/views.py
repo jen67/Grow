@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.models import User
 from rest_framework import viewsets
 from .serializers import UserProfileSerializer, UserStatisticsSerializer, UserPreferencesSerializer, UserSubscriptionSerializer, UserActivityLogSerializer, UserFeedbackSerializer
 from .models import UserProfile, UserStatistics, UserPreferences, UserSubscription, UserActivityLog, UserFeedback
@@ -37,6 +38,7 @@ def SignUp(request):
         if form.is_valid():
             user = form.save()
             login(request, user)  # Log the user in after signup
+            print(request.user.is_authenticated)
             return redirect('index')  # Redirect to the homepage after signup
     else:
         form = UserCreationForm()
@@ -49,8 +51,17 @@ def UserLogin(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
+            print(request.user.is_authenticated)
             # Redirect the user to the appropriate page after login
-            return redirect('index')  # Change 'index' to the name of your homepage URL pattern
+            return redirect('accounts:userprofile', username=request.user.username) # Change 'index' to the name of your homepage URL pattern
     else:
         form = AuthenticationForm(request)
     return render(request, 'login.html', {'form': form})  # Change 'login.html' to your login template name
+
+def user_profile(request, username):
+    user = get_object_or_404(User, username=username)
+    profile = get_object_or_404(UserProfile, user=user)
+    return render(request, 'userprofile.html', {'profile': profile})
+
+def dash_board(request):
+    return render(request, 'dash.html')
