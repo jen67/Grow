@@ -6,13 +6,14 @@ we define a url pattern that maps to the view.py.
 """
 
 
-from django.urls import path
+from django.urls import include, path
 from . import views
 
 
 app_name = 'accounts'
 
 urlpatterns = [
+    path('', include("django.contrib.auth.urls")),
     path('signup/', views.SignUp, name='signup'),
     path('login/', views.UserLogin, name='login'),
     path('userprofile/<str:username>/', views.user_profile, name='userprofile'),

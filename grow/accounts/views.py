@@ -44,7 +44,7 @@ def SignUp(request):
             return redirect('index')  # Redirect to the homepage after signup
     else:
         form = UserCreationForm()
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'registration/signup.html', {'form': form})
 
 def UserLogin(request):
     """user should be able to login."""
@@ -58,7 +58,7 @@ def UserLogin(request):
             return redirect('accounts:userprofile', username=request.user.username) # Change 'index' to the name of your homepage URL pattern
     else:
         form = AuthenticationForm(request)
-    return render(request, 'login.html', {'form': form})  # Change 'login.html' to your login template name
+    return render(request, 'registration/login.html', {'form': form})  # Change 'login.html' to your login template name
 
 def user_profile(request, username):
     user = get_object_or_404(User, username=username)
