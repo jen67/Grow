@@ -1,5 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login
+import traceback
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.models import User
 from rest_framework import viewsets
@@ -63,5 +64,13 @@ def user_profile(request, username):
     profile = get_object_or_404(UserProfile, user=user)
     return render(request, 'userprofile.html', {'profile': profile})
 
-def dash_board(request):
-    return render(request, 'dash.html')
+def dashboard(request):
+    # Your logic to determine whether to redirect or not
+    try:
+        if not request.user.is_authenticated:  # For example, if user is not authenticated
+            return redirect('accounts:login')  # Redirect to the login page
+        else:
+            return render(request, 'dash.html')
+    except Exception as e:
+        traceback.print_exc()
+        return HttpResponseServerError()

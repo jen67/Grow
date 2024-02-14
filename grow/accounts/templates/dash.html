@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-{% extends 'jobtest/home.html' %}
-
-{% block content %}
-Hello, {{ user.username|default:'Guest' }}!
-{% endblock %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,13 +39,13 @@ Hello, {{ user.username|default:'Guest' }}!
                 <h5>Sidebar</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                      <a class="nav-link active" href="{% url 'jobtest:index' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                      <a class="nav-link" href="{% url 'accounts:userprofile' username=request.user.username %}">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Settings</a>
+                      <a class="nav-link" href="{% url 'accounts:dashboard' %}">Dashboard</a>
                     </li>
                 </ul>
             </div>

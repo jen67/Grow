@@ -24,24 +24,24 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2lw@v-6gyzozl%$qaju8o7rvyku(du$j15m#$j@y@-9kkxah1q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
+    'rest_framework',
+    'jobtest.apps.JobtestConfig',
+    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
-    'rest_framework',
-    'jobtest',
-    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +60,10 @@ ROOT_URLCONF = 'grow.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'jobtest', 'templates'),
+            os.path.join(BASE_DIR, 'accounts', 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,12 +127,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Define the directory where Django will collect static files during deployment
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Additional directories where static files are located
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'jobtest', 'templates', 'static'),
-]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

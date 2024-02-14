@@ -15,8 +15,6 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.conf import settings
-from django.conf.urls.static import static
 from django.urls import path, include
 from rest_framework import routers
 from jobtest import views as jobtest_views
@@ -36,9 +34,9 @@ router.register(r'userfeedbacks', accounts_views.UserFeedbackViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('', jobtest_views.index, name='index'),
-    path('accounts/', include('accounts.urls')),
+    path("jobtest/", include("jobtest.urls", namespace="jobtest")),
+    path("", jobtest_views.index, name="home"),
+    path('accounts/', include('accounts.urls', namespace='accounts')),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path("dashboard/", accounts_views.dashboard, name="dashboard"),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
