@@ -1,11 +1,26 @@
-import './App.css';
+import React from "react";
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Product from "./components/Product";
+import Signup from "./components/Signup";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Lang from "./components/Lang";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-	  <div>
-	  <h1> Hello world! </h1>
-	  <p> This is Grow Test page </p>
-	  </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Product />
+      <Lang />
+      <Signup />
+      <About />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
