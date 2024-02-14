@@ -6,11 +6,12 @@ we define a url pattern that maps to the view.py.
 """
 
 
-from django.urls import path, include
-from .views import index
+from django.urls import path
+from . import views
+
 
 app_name = 'jobtest'
 
 urlpatterns = [
-    path("", index, name="index"),
+    path("", views.index, name="index"),
 ]

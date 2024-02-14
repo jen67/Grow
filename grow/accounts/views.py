@@ -2,6 +2,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login
 import traceback
 from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponseServerError
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 from .serializers import UserProfileSerializer, UserStatisticsSerializer, UserPreferencesSerializer, UserSubscriptionSerializer, UserActivityLogSerializer, UserFeedbackSerializer

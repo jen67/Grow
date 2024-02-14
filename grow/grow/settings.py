@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2lw@v-6gyzozl%$qaju8o7rvyku(du$j15m#$j@y@-9kkxah1q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
@@ -34,14 +34,15 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
-    'jobtest.apps.JobtestConfig',
-    'accounts.apps.AccountsConfig',
+    'bootstrap4',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jobtest.apps.JobtestConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
