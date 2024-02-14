@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import Product from "./components/Product";
 import Signup from "./components/Signup";
 import About from "./components/About";
-import contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Lang from "./components/Lang";
 import Footer from "./components/Footer";
 
@@ -15,8 +15,10 @@ function App() {
       <Navbar />
       <Hero />
       <Product />
+      <Lang />
       <Signup />
       <About />
+      <Contact />
       <Footer />
     </>
   );
