@@ -66,12 +66,4 @@ def user_profile(request, username):
     return render(request, 'userprofile.html', {'profile': profile})
 
 def dashboard(request):
-    # Your logic to determine whether to redirect or not
-    try:
-        if not request.user.is_authenticated:  # For example, if user is not authenticated
-            return redirect('accounts:login')  # Redirect to the login page
-        else:
-            return render(request, 'dash.html')
-    except Exception as e:
-        traceback.print_exc()
-        return HttpResponseServerError()
+    return render(request, 'dash.html')

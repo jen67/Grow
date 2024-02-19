@@ -1,0 +1,9 @@
+<!--password has been changed-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Password changed</h2>
+
+<a href="{% url 'accounts:dashboard' %}">Back to dashboard</a>
+{% endblock %}

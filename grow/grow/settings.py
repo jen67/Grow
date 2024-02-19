@@ -128,6 +128,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Define the directory where Django will collect static files during deployment
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'jobtest', 'templates', 'static'),
+]
+
 
 # Additional directories where static files are located
 
