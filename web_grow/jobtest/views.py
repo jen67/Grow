@@ -7,7 +7,6 @@ HTTP requests and return HTTP responses.
 
 
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import HttpResponse
 from .models import Test, Question, Submission
 from .forms import SubmissionForm
 from django.db.models import Sum
@@ -18,7 +17,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def index(request):
-    return HttpResponse("Hi, you're at the job test index.")
+    return render(request, 'index.html')
 
 def homepage(request):
     """Homepage for Grow"""

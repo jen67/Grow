@@ -7,11 +7,8 @@ we define a url pattern that maps to the view.py.
 
 
 from django.urls import path
-from django.conf import settings
-from django.conf.urls.static import static
 
 from .views import (
-    index,
     homepage,
     register, 
     user_login, 
@@ -26,7 +23,6 @@ from .views import (
 
 
 urlpatterns = [
-    path("", index, name="index"),
     path("homepage/", homepage, name='homepage'),
     path('register/', register, name='register'),
     path('login/', user_login, name='login'),
@@ -38,6 +34,3 @@ urlpatterns = [
     path('user/submissions/', user_submissions, name='user_submissions'),
     path('leaderboard/', leaderboard, name='leaderboard'),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
