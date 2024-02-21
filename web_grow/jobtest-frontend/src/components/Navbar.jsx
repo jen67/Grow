@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
@@ -24,7 +25,7 @@ function Navbar() {
           About
         </li>
         <li className="p-4 hover:border-b-2 hover:border-[#00df9a] transition duration-200 ease-in-out">
-          Contact
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       {/* <button className="outline outline-1 outline-[#00df9a] px-4 py-2 rounded-lg hover:bg-[#00df9a]">
