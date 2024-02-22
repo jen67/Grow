@@ -1,5 +1,5 @@
 <p >
-  <img src="../Grow/web_grow/jobtest-frontend/images/DarkThemeLogo.png" alt="GROW Logo" width="100%" height="100%">
+  <img src="web_grow/jobtest-frontend/images/DarkThemeLogo.png" alt="GROW Logo" width="100%" height="100%">
 </p>
 
 
