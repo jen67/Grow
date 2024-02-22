@@ -24,7 +24,7 @@ function Hero() {
             loop
           />
         </div>
-        <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-[#fff] hover:text-black">
+        <button className="bg-primary w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-[#fff] hover:text-black">
           Get Started
         </button>
       </div>
