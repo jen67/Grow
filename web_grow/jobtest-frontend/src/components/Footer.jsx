@@ -33,38 +33,76 @@ function Footer() {
 
       <div className="lg:col-span-2 flex justify-between lg:mt-6">
         <div>
-          <h5 className="font-medium text-gray-400">Solutions</h5>
+          <h5 className="font-medium text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">
+            Solutions
+          </h5>
           <ul>
-            <li className="py-2 text-sm">Interview Training</li>
-            <li className="py-2 text-sm">Resume Review</li>
-            <li className="py-2 text-sm">Mock Interviews</li>
-            <li className="py-2 text-sm">Collaborative Learning</li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Interview Training
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Resume Review
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Mock Interviews
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Collaborative Learning
+            </li>
           </ul>
         </div>
         <div>
-          <h5 className="font-medium text-gray-400">Support</h5>
+          <h5 className="font-medium text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">
+            Support
+          </h5>
           <ul>
-            <li className="py-2 text-sm">Pricing</li>
-            <li className="py-2 text-sm">Documentation</li>
-            <li className="py-2 text-sm">Guides</li>
-            <li className="py-2 text-sm">API Status</li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Pricing
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Documentation
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Guides
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              API Status
+            </li>
           </ul>
         </div>
         <div>
-          <h5 className="font-medium text-gray-400">Company</h5>
+          <h5 className="font-medium text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">
+            Company
+          </h5>
           <ul>
-            <li className="py-2 text-sm">About</li>
-            <li className="py-2 text-sm">Blog</li>
-            <li className="py-2 text-sm">Team</li>
-            <li className="py-2 text-sm">Product</li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              About
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Blog
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Team
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Product
+            </li>
           </ul>
         </div>
         <div>
-          <h5 className="font-medium text-gray-400">Legal</h5>
+          <h5 className="font-medium text-gray-400 hover:text-white  transition-colors duration-200 cursor-pointer">
+            Legal
+          </h5>
           <ul>
-            <li className="py-2 text-sm">Claim</li>
-            <li className="py-2 text-sm">Policy</li>
-            <li className="py-2 text-sm">Terms</li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Claim
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Policy
+            </li>
+            <li className="py-2 text-sm hover:text-white hover:font-bold transition-colors duration-200 cursor-pointer">
+              Terms
+            </li>
           </ul>
         </div>
       </div>
