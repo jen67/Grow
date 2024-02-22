@@ -1,5 +1,9 @@
-# GROW - Elevating Developers for Success in Interviews
+<p >
+  <img src="../Grow/web_grow/jobtest-frontend/images/DarkThemeLogo.png" alt="GROW Logo" width="100%" height="100%">
+</p>
 
+
+ # GROW - Elevating Developers for Success in Interviews
 <p align="center">
   <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT">
