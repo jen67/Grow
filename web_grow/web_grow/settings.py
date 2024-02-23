@@ -105,6 +105,15 @@ AUTH_USER_MODEL = "users.CustomUser"
 SOCIAL_AUTH_GITHUB_KEY = os.environ.get('24c2ce8b3e9766385263')
 SOCIAL_AUTH_GITHUB_SECRET = os.environ.get('03c2dcc82446716d25ed2e5789a1cd9021896e63')
 
+# Google authentication
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = "498741019514-lj2ieh1kd1a6qo0o973rdc4fv05h2hs4.apps.googleusercontent.com"
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "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"
+
+# Define SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE to get extra permissions from Google.
+SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
+    'https://www.googleapis.com/auth/userinfo.email',
+    'https://www.googleapis.com/auth/userinfo.profile',
+]
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
