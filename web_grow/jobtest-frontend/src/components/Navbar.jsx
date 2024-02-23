@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -13,19 +15,33 @@ function Navbar() {
         Grow App &#8805;
       </header>
       <ul className="hidden md:flex">
-        <li className="p-4">Product</li>
-        <li className="p-4">Language</li>
-        <li className="p-4">About</li>
-        <li className="p-4">Contact</li>
+        <li className="p-4 hover:border-b-2 hover:border-[#00df9a] transition duration-200 ease-in-out">
+          Product
+        </li>
+        <li className="p-4 hover:border-b-2 hover:border-[#00df9a] transition duration-200 ease-in-out">
+          Language
+        </li>
+        <li className="p-4 hover:border-b-2 hover:border-[#00df9a] transition duration-200 ease-in-out">
+          About
+        </li>
+        <li className="p-4 hover:border-b-2 hover:border-[#00df9a] transition duration-200 ease-in-out">
+          <Link to="/contact">Contact</Link>
+        </li>
       </ul>
       {/* <button className="outline outline-1 outline-[#00df9a] px-4 py-2 rounded-lg hover:bg-[#00df9a]">
         Sign In
       </button> */}
 
       <div onClick={handleNav} className="block md:hidden">
-        {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
-      <div className={nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-300" : 'fixed left-[-100%]'}>
+      <div
+        className={
+          nav
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-300"
+            : "fixed left-[-100%]"
+        }
+      >
         <header className="w-full text-3xl font-bold text-[#00df9a] m-4">
           Grow App &#8805;
         </header>

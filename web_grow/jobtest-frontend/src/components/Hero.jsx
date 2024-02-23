@@ -12,7 +12,8 @@ function Hero() {
           Ace Your Job Interviews with Grow app
         </h2>
         <div>
-          <ReactTyped className="md:text-4xl sm:text-3xl text-xl font-bold text-[#00df9a] uppercase pl-2"
+          <ReactTyped
+            className="md:text-4xl sm:text-3xl text-xl font-bold text-[#00df9a] uppercase pl-2"
             strings={[
               "Elevate your skills,",
               "prepare with confidence,",
@@ -23,7 +24,9 @@ function Hero() {
             loop
           />
         </div>
-        <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">Get Started</button>
+        <button className="bg-primary w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black hover:bg-[#fff] hover:text-black">
+          Get Started
+        </button>
       </div>
     </div>
   );
