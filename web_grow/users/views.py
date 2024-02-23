@@ -1,3 +1,4 @@
+from django.contrib.auth import authenticate
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework import status, generics
@@ -5,6 +6,7 @@ from rest_framework.response import Response
 from .serializers import RegistrationSerializer, UsersSerializer
 from rest_framework import permissions
 from .models import CustomUser
+from rest_framework.authtoken.models import Token
 import requests
 
 # Create your views here.
@@ -40,3 +42,35 @@ class CurrentUser(APIView):
     def get(self, request):
         serializer = UsersSerializer(self.request.user)
         return Response(serializer.data)
+
+
+class UserLogin(APIView):
+    """ Custom API view for user login. """
+    def post(self, request, *args, **kwargs):
+        # Obtain the username and password from the request data
+        email = request.data.get('email')
+        password = request.data.get('password')
+        # Perform authentication
+        user = authenticate(request, email=email, password=password)
+        if user is not None:
+            # User is authenticated, generate or retrieve the token
+            token, created = Token.objects.get_or_create(user=user)
+            return Response({'token': token.key}, status=status.HTTP_200_OK)
+        else:
+            # Authentication failed
+            return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+
+
+class UserLogout(APIView):
+    """ Custom API view for user logout. """
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    def post(self, request, *args, **kwargs):
+        # Retrieve the user's authentication token
+        token = request.auth
+        if token:
+            # Delete the user's authentication token
+            token.delete()
+            return Response({'message': 'User logged out successfully.'}, status=status.HTTP_200_OK)
+        else:
+            return Response({'error': 'User is not authenticated.'}, status=status.HTTP_400_BAD_REQUEST)
