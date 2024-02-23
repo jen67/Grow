@@ -1,73 +1,25 @@
-"""
-
-Views are functions or classes that handle
-HTTP requests and return HTTP responses.
-
-"""
-
-
 from django.shortcuts import render, get_object_or_404, redirect
+from django.http import HttpResponse
+from rest_framework import viewsets
+from .serializers import TestSerializer, QuestionSerializer, SubmissionSerializer
 from .models import Test, Question, Submission
 from .forms import SubmissionForm
 from django.db.models import Sum
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import login, authenticate
-from django.contrib.auth.decorators import login_required
 
 
-def index(request):
-    return render(request, 'index.html')
+# Create your views here.
 
-def homepage(request):
-    """Homepage for Grow"""
-    tests = Test.objects.all()
-    homepage_items = {
-        'tests': tests,
-    }
-    return render(request, 'homepage.html', homepage_items)
+class TestView(viewsets.ModelViewSet):
+    queryset = Test.objects.all()
+    serializer_class = TestSerializer
 
-def register(request):
-    """register new users"""
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)
-            return redirect('dashboard')
-    else:
-        form = UserCreationForm()
-    return render(request, 'registration/register.html', {'form': form})
+class QuestionView(viewsets.ModelViewSet):
+    queryset = Question.objects.all()
+    serializer_class = QuestionSerializer
 
-def user_login(request):
-    """user should be able to login."""
-    if request.method == 'POST':
-        form = AuthenticationForm(request, request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            login(request, user)
-            return redirect('dashboard')
-    else:
-        form = AuthenticationForm()
-    return render(request, 'registration/login.html', {'form': form})
-
-@login_required
-def dashboard(request):
-    """
-    Creates a view where users can see their profile information
-    and submit answers to questions.
-    This view is protected, meaning only authenticated users can access it.
-    """
-    if request.method == 'POST':
-        form = AnswerSubmissionForm(request.POST)
-        if form.is_valid():
-            submit_answer = form.save(commit=False)
-            submit_answer.user = request.user
-            submit_answer.save()
-            return redirect('dashboard')
-    else:
-        form = AnswerSubmissionForm()
-    return render(request, 'jobtest/dashboard.html', {'form': form})
+class SubmissionView(viewsets.ModelViewSet):
+    queryset = Submission.objects.all()
+    serializer_class = SubmissionSerializer
 
 def test_list(request):
     """
@@ -121,15 +73,3 @@ def user_submissions(request):
     """
     submissions = Submission.objects.filter(user=request.user)
     return render(request, 'jobtest/user_submissions.html', {'submissions': submissions})
-
-def leaderboard(request):
-    """
-    Displays a leaderboard showcasing top performers based on scores.
-    Includes information such as the user's name and total score.
-    """
-    data_board = (
-        User.objects
-        .annotate(total_score=Sum('submissions__score'))
-        .order_by('-total_score')
-    )
-    return render(request, 'jobtest/leaderboard.html', {'data_board': data_board})

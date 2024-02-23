@@ -16,10 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from jobtest.views import index
+from rest_framework import routers
+from .views import index
+
+
+router = routers.DefaultRouter()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('jobtest.urls')),
-    path("", index, name="index"),
+    path('', index, name='index'),
+    path('api/jobtest/urls', include(router.urls)),
+    path('api-auth/', include('users.urls')),
+    path('api-auth/', include('rest_framework.urls')),
+    path('api-auth/', include('drf_social_oauth2.urls',namespace='drf')),
+    path('oauth/', include('social_django.urls')),
 ]
