@@ -62,6 +62,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'web_grow.urls'
 
 AUTHENTICATION_BACKENDS = (
+    'social_core.backends.google.GoogleOAuth2',
     'drf_social_oauth2.backends.DjangoOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 )
@@ -99,6 +100,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'web_grow.wsgi.application'
 
 AUTH_USER_MODEL = "users.CustomUser"
+
+# Github authentication
+SOCIAL_AUTH_GITHUB_KEY = os.environ.get('24c2ce8b3e9766385263')
+SOCIAL_AUTH_GITHUB_SECRET = os.environ.get('03c2dcc82446716d25ed2e5789a1cd9021896e63')
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases

@@ -26,7 +26,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('api/jobtest/urls', include(router.urls)),
-    path('api/users/urls', include(router.urls)),
+    path('api-auth/', include('users.urls')),
     path('api-auth/', include('rest_framework.urls')),
     path('api-auth/', include('drf_social_oauth2.urls',namespace='drf')),
+    path('oauth/', include('social_django.urls')),
 ]
