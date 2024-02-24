@@ -1,4 +1,5 @@
 from django.contrib.sites.shortcuts import get_current_site
+from rest_framework.authentication import TokenAuthentication
 from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
 from django.utils.http import urlsafe_base64_encode
@@ -10,6 +11,7 @@ from rest_framework import status, generics
 from rest_framework.response import Response  
 from .serializers import RegistrationSerializer, UsersSerializer
 from rest_framework import permissions
+from rest_framework.permissions import IsAuthenticated
 from .models import CustomUser
 from rest_framework.authtoken.models import Token
 import requests
@@ -32,8 +34,8 @@ class CreateAccount(APIView):
 
                 # Send an email with the verification link
                 current_site = get_current_site(request)
-                 mail_subject = 'Activate your account'
-                 message = render_to_string('activation_email.html', {
+                mail_subject = 'Activate your account'
+                message = render_to_string('activation_email.html', {
                      'user': new_user,
                      'domain': current_site.domain,
                      'uid': uid,
