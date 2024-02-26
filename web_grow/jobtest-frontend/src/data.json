@@ -743,32 +743,32 @@
 
     "platformCards": [
         {
-            "cardImage": "assets/image1.png",
+            "cardImage": "/assets/image1.png",
             "cardHeader": "Personalized Interview Training",
             "bodyText": "Our platform offers tailored interview preparation, ensuring users focus on the areas most relevant to their target jobs. With personalized sessions, individuals can hone their skills and knowledge, maximizing their readiness for any interview scenario."
         },
         {
-            "cardImage": "assets/image2.png",
+            "cardImage": "/assets/image2.png",
             "cardHeader": "Mock Interviews",
             "bodyText": "Elevate your preparation with immersive mock interviews, meticulously designed to replicate real-world scenarios. Receive invaluable feedback to refine your skills and boost your confidence for the big day, ensuring you're well-prepared to secure your desired job."
         },
         {
-            "cardImage": "assets/image3.png",
+            "cardImage": "/assets/image3.png",
             "cardHeader": "Collaborative Learning",
             "bodyText": "Engage in lively discussions, participate in group challenges, and attend interactive workshops to enhance your skills and stay ahead of the curve. With our supportive community by your side, you'll gain the motivation needed to excel in your job search and beyond."
         },
         {
-            "cardImage": "assets/image4.jpg",
+            "cardImage": "/assets/image4.png",
             "cardHeader": "Resume and Portfolio Review",
             "bodyText": "Get expert feedback on your resume and portfolio to craft compelling narratives that highlight your achievements and skills. Our personalized guidance will help you refine your presentation, making you stand out to potential employers."
         },
         {
-            "cardImage": "assets/image5.png",
+            "cardImage": "/assets/image5.png",
             "cardHeader": "Question Banks",
             "bodyText": "Gain access to comprehensive question banks spanning various industries and job roles. Anticipate interview questions confidently and craft compelling responses with our extensive resources. Prepare thoroughly and approach interviews with assurance."
         },
         {
-            "cardImage": "assets/image6.png",
+            "cardImage": "/assets/image6.png",
             "cardHeader": "Progress Tracking",
             "bodyText": "Track your progress with insightful analytics, ensuring continuous improvement and readiness for any interview scenario. Gain valuable insights into your strengths and areas for growth, empowering you to refine your preparation strategy effectively."
         }

@@ -7,7 +7,7 @@ const CardComponent = () => {
       {data.platformCards.map((card, index) => (
         <div key={index}>
           <img
-            src={require(`../${card.cardImage}`).default}
+            src={card.cardImage}
             alt={card.cardHeader}
           />
           <h2>{card.cardHeader}</h2>
