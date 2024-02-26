@@ -8,6 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Lang from "./components/Lang";
 import Footer from "./components/Footer";
+import CardComponent from "./components/card";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
+      <CardComponent />
     </>
   );
 }

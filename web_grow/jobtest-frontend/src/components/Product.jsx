@@ -1,5 +1,5 @@
 import React from "react";
-import personalized from "../assets/11.png";
+import personalized from "../assets/image2.png";
 // import mock from "../assets/mock2.jpg";
 // import collaborative from "../assets/collaborative 2.jpg";
 // import review from "../assets/Resume Review.png";
