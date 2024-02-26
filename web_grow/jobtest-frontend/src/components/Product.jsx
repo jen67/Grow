@@ -4,6 +4,7 @@ import personalized from "../assets/11.png";
 // import collaborative from "../assets/collaborative 2.jpg";
 // import review from "../assets/Resume Review.png";
 
+
 function Product() {
   return (
     <div className="w-full bg-white py-11 px-4">

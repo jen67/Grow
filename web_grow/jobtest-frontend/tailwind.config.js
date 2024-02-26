@@ -12,6 +12,10 @@ module.exports = {
         'dark-grey': '#333333',
         'light-grey': '#f2f2f2',
       },
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+      }
     },
   },
   plugins: [],
