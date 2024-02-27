@@ -32,7 +32,7 @@ function Navbar() {
           <Link to="/Contact">Contact</Link>
         </li>
 
-        <button className="bg-dark-green text-white rounded-lg px-8 py-2 m-2  inline-block flex whitespace-nowrap hidden md:inline-block">
+        <button className="bg-dark-green text-white rounded-lg px-8 py-2 m-2  inline-block flex whitespace-nowrap hidden md:inline-block  hover:ring-2 hover:ring-primary">
           <Link to="/signUP">Get Started</Link>
         </button>
       </ul>
@@ -72,7 +72,7 @@ function Navbar() {
               Contact
             </Link>
           </li>
-          <button className="bg-dark-green text-white rounded-lg px-8 py-2 m-2">
+          <button className="bg-dark-green text-white rounded-lg px-8 py-2 m-2  hover:ring-2 hover:ring-primary">
             <Link to="/signUP" onClick={handleNav}>
               Get Started
             </Link>

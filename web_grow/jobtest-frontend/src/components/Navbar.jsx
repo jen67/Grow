@@ -33,7 +33,7 @@ function Navbar() {
         </li>
       </ul>
 
-      <button className="bg-primary text-black rounded-lg px-8 py-2 m-2  inline-block flex whitespace-nowrap hidden md:inline-block hover:outline-dark-green hover:bg-white">
+      <button className="bg-primary text-black rounded-lg px-8 py-2 m-2  inline-block flex whitespace-nowrap hidden md:inline-block  hover:ring-2 hover:ring-grey">
         <Link to="/signUP">Get Started</Link>
       </button>
 
@@ -53,9 +53,7 @@ function Navbar() {
         </header>
         <ul className="uppercase p-4">
           <li className="p-4 border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
-            <Link to="/" >
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="p-4 border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
             <Link to="/About" onClick={handleNav}>
@@ -73,7 +71,7 @@ function Navbar() {
             </Link>
           </li>
 
-          <button className="bg-primary text-black rounded-lg px-8 py-2 m-2">
+          <button className="bg-primary text-black rounded-lg px-8 py-2 m-2 hover:ring-2 hover:ring-grey">
             <Link to="/signUP" onClick={handleNav}>
               Get Started
             </Link>
