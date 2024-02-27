@@ -1,26 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/Favicon32x32.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Grow Website, this website prepares one for tech interviews"
-    />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/Favicon32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Grow Website, this website prepares one for tech interviews" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Grow App</title>
+
+  <!-- <style>
+
+    body{
+      background-color: red;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    .container{
+      padding: 1rem;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card{
+      height: 450px;
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .card img{
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .card-body h2{
+      padding: 1rem 0;
+      color:black;
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    .card-body p{
+      font-size: 1rem;
+      font-weight: 400;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+    }
+
+
+    @media (min-width: 768px){
+      .container{
+        padding:1rem 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .card{
+        max-width: 340px;
+      }
+
+      .card-body h2{
+        font-size:1.1rem;
+      }
+    }
+
+    @media screen and (width: 1024px){
+      .card{
+        max-width: 300px;
+        height: 400px;
+      }
+
+      .card-body h2{
+        font-size: 1rem;
+      }
+
+      .card-body p{
+        font-size: 0.9rem;
+      }
+    }
+
+
+    @media screen and (min-width: 1280px){
+
+      .container{
+        padding: 1rem 2.4rem;
+      }
+      .card{
+        max-width: unset;
+        height: 520px;
+       width: 400px;
+      }
+
+      .card-body h2{
+        font-size: 1.4rem;
+      }
+
+      .card-body p{
+        font-size: 1.2rem;
+      
+      }
+    }
     
-    <title>Grow App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  </style> -->
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -30,5 +137,101 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+
+    <!-- <div class="container ">
+      <div class="card">
+        <img src="./assets/image1.png" alt="image1">
+
+        <div class="card-body">
+          <h2>Personalized interview Training</h2>
+          <p>Grow is a platform that prepares you for tech interviews
+          Our platform offers tailored interview preparation, ensuring users focus on the areas most relevant to their target
+          jobs. With personalized sessions, individuals can hone their skills and knowledge, maximizing their readiness for any
+          interview scenario.
+          help
+          </p>
+          </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/image1.png" alt="image1">
+      
+        <div class="card-body">
+          <h2>Personalized interview Training</h2>
+          <p>Grow is a platform that prepares you for tech interviews
+            Our platform offers tailored interview preparation, ensuring users focus on the areas most relevant to their
+            target
+            jobs. With personalized sessions, individuals can hone their skills and knowledge, maximizing their readiness for
+            any
+            interview scenario.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/image1.png" alt="image1">
+      
+        <div class="card-body">
+          <h2>Personalized interview Training</h2>
+          <p>Grow is a platform that prepares you for tech interviews
+            Our platform offers tailored interview preparation, ensuring users focus on the areas most relevant to their
+            target
+            jobs. With personalized sessions, individuals can hone their skills and knowledge, maximizing their readiness for
+            any
+            interview scenario.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/image1.png" alt="image1">
+      
+        <div class="card-body">
+          <h2>Personalized interview Training</h2>
+          <p>Grow is a platform that prepares you for tech interviews
+            Our platform offers tailored interview preparation, ensuring users focus on the areas most relevant to their
+            target
+            jobs. With personalized sessions, individuals can hone their skills and knowledge, maximizing their readiness for
+            any
+            interview scenario.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/image1.png" alt="image1">
+      
+        <div class="card-body">
+          <h2>Personalized interview Training</h2>
+          <p>Grow is a platform that prepares you for tech interviews
+            Our platform offers tailored interview preparation, ensuring users focus on the areas most relevant to their
+            target
+            jobs. With personalized sessions, individuals can hone their skills and knowledge, maximizing their readiness for
+            any
+            interview scenario.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/image1.png" alt="image1">
+      
+        <div class="card-body">
+          <h2>Personalized interview Training</h2>
+          <p>Grow is a platform that prepares you for tech interviews
+            Our platform offers tailored interview preparation, ensuring users focus on the areas most relevant to their
+            target
+            jobs. With personalized sessions, individuals can hone their skills and knowledge, maximizing their readiness for
+            any
+            interview scenario.
+          </p>
+        </div>
+      </div>
+      
+
+      
+    </div> -->
+</body>
+
 </html>

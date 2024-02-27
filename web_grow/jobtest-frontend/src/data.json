@@ -1,0 +1,889 @@
+{
+    "frontendCourses": [
+        {
+            "course_name": "HTML Fundamentals and Best Practices",
+            "course_id": "01",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Semantic HTML",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "HTML5 Features",
+                    "duration": "45 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Accessibility Standards",
+                    "duration": "1 Hour 30 Minutes"
+                }
+            ]
+        },
+        {
+            "course_name": "CSS Styling Techniques and Layouts",
+            "course_id": "02",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "CSS Box Model",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Flexbox and Grid Layouts",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "CSS Specificity and Selectors",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "JavaScript Core Concepts and Fundamentals",
+            "course_id": "03",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Data Types and Variables",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Functions and Scope",
+                    "duration": "2 Hours"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Objects and Prototypes",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "DOM Manipulation and Event Handling",
+            "course_id": "04",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Selecting DOM Elements",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Modifying DOM Elements",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Event Bubbling and Event Delegation",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "Frontend Frameworks Basics",
+            "course_id": "05",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "React Components and Props",
+                    "duration": "2 Hours"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Vue.js Directives and Lifecycle Hooks",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Angular Modules and Dependency Injection",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "Responsive Web Design Principles",
+            "course_id": "06",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Media Queries",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Fluid Layouts",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Viewport Meta Tag",
+                    "duration": "45 Minutes"
+                }
+            ]
+        },
+        {
+            "course_name": "Cross-Browser Compatibility and Testing",
+            "course_id": "07",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Browser Rendering Engines",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "CSS Prefixes and Vendor Specific Properties",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Cross-Browser Testing Tools",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "Web App Performance Optimization",
+            "course_id": "08",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Minification and Compression",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Lazy Loading and Code Splitting",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Caching Strategies and Browser Storage",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Sass Fundamentals",
+            "course_id": "09",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Introduction to Sass",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Variables and Mixins",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Nesting and Partials",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Less CSS Basics",
+            "course_id": "10",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Getting Started with Less",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Variables and Operations",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Mixins and Functions",
+                    "duration": "2 Hours"
+                }
+            ]
+        }
+    ],
+    "backendCourses": [
+        {
+            "course_name": "Python Fundamentals",
+            "course_id": "01",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Basic Syntax and Data Types",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Control Flow and Functions",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "File Handling and Modules",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "C Language Essentials",
+            "course_id": "02",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Basic Syntax and Data Types",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Pointers and Memory Management",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Functions and Structures",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Java Programming Basics",
+            "course_id": "03",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Object-Oriented Programming Concepts",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Java Syntax and Control Flow",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Collections and Streams",
+                    "duration": "1 Hour 30 Minutes"
+                }
+            ]
+        },
+        {
+            "course_name": "PHP Programming Fundamentals",
+            "course_id": "04",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "PHP Syntax and Data Types",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Functions and Control Structures",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Database Connectivity with MySQL",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Node.js Essentials",
+            "course_id": "05",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Node.js Basics and Modules",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Asynchronous Programming with Callbacks",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Express.js Fundamentals",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Introduction to Backend Development",
+            "course_id": "06",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Introduction to Server-side Programming",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Building RESTful APIs",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Database Management",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Authentication and Authorization",
+            "course_id": "07",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Authentication Methods",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Role-based Access Control",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "OAuth and JWT",
+                    "duration": "1 Hour 30 Minutes"
+                }
+            ]
+        },
+        {
+            "course_name": "Database Design and Implementation",
+            "course_id": "08",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Relational Database Concepts",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Normalization and Indexing",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Transactions and ACID Properties",
+                    "duration": "1 Hour 30 Minutes"
+                }
+            ]
+        },
+        {
+            "course_name": "Backend Frameworks and Libraries",
+            "course_id": "09",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Express.js Fundamentals",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Django Basics",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Spring Boot Essentials",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "RESTful API Security and Best Practices",
+            "course_id": "10",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Input Validation and Sanitization",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Authentication Middleware",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "JWT Implementation",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "Backend Testing and Test-Driven Development",
+            "course_id": "11",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Unit Testing Basics",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Integration Testing Strategies",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Test-Driven Development (TDD)",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Backend Performance Optimization",
+            "course_id": "12",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Query Optimization Techniques",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Caching Strategies",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Load Balancing and Scalability",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "Microservices Architecture and Deployment",
+            "course_id": "13",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Introduction to Microservices",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Containerization with Docker",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Orchestration with Kubernetes",
+                    "duration": "2 Hours"
+                }
+            ]
+        }
+    ],
+    "devopsCourses": [
+        {
+            "course_name": "Introduction to DevOps Principles",
+            "course_id": "01",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Understanding DevOps Culture",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Key DevOps Practices and Benefits",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "DevOps Toolchain Overview",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Containerization with Docker",
+            "course_id": "02",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Docker Basics and Container Lifecycle",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Managing Docker Images and Containers",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Docker Compose for Multi-Container Applications",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Automation with Ansible",
+            "course_id": "03",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Ansible Installation and Configuration",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Writing Ansible Playbooks",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Ansible Tower Overview",
+                    "duration": "1 Hour 30 Minutes"
+                }
+            ]
+        },
+        {
+            "course_name": "Continuous Integration and Deployment Pipelines",
+            "course_id": "04",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Setting Up Jenkins",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "CI/CD Pipeline Configuration",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Pipeline Orchestration with Jenkins",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Cloud Infrastructure Management",
+            "course_id": "05",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Introduction to Cloud Computing",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "AWS Services Overview",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Azure Infrastructure Essentials",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "Monitoring and Logging Solutions",
+            "course_id": "06",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Logging Best Practices",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Metrics Collection and Visualization",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Alerting and Incident Management",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "Security Practices in DevOps",
+            "course_id": "07",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Infrastructure Security Basics",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Secure Software Development Lifecycle (SDLC)",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Security Automation with DevSecOps",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Scalability and High Availability",
+            "course_id": "08",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Load Balancing Strategies",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Horizontal and Vertical Scaling",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Fault Tolerance and Redundancy",
+                    "duration": "1 Hour"
+                }
+            ]
+        },
+        {
+            "course_name": "Scripting with Bash",
+            "course_id": "09",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Introduction to Bash Scripting",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Bash Variables and Control Structures",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Shell Scripting Best Practices",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "PowerShell Basics",
+            "course_id": "10",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Getting Started with PowerShell",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "PowerShell Commands and Syntax",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "PowerShell Scripting and Automation",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Perl Scripting Essentials",
+            "course_id": "11",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Perl Basics and Syntax",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Perl Data Types and Operators",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Regular Expressions in Perl",
+                    "duration": "2 Hours"
+                }
+            ]
+        },
+        {
+            "course_name": "Version Control with Git and GitHub",
+            "course_id": "12",
+            "lessons": [
+                {
+                    "lesson_number": "Lesson 01",
+                    "lesson_name": "Git Basics and Version Control Concepts",
+                    "duration": "1 Hour"
+                },
+                {
+                    "lesson_number": "Lesson 02",
+                    "lesson_name": "Working with Git Branches and Merging",
+                    "duration": "1 Hour 30 Minutes"
+                },
+                {
+                    "lesson_number": "Lesson 03",
+                    "lesson_name": "Collaborative Development with GitHub",
+                    "duration": "2 Hours"
+                }
+            ]
+        }
+    ],
+    "platformCards": [
+        {
+            "cardImage": "/assets/image1.png",
+            "cardHeader": "Personalized Interview Training",
+            "bodyText": "Our platform offers tailored interview preparation, ensuring users focus on the areas most relevant to their target jobs. With personalized sessions, individuals can hone their skills and knowledge, maximizing their readiness for any interview scenario."
+        },
+        {
+            "cardImage": "/assets/image2.png",
+            "cardHeader": "Mock Interviews",
+            "bodyText": "Elevate your preparation with immersive mock interviews, meticulously designed to replicate real-world scenarios. Receive invaluable feedback to refine your skills and boost your confidence for the big day, ensuring you're well-prepared to secure your desired job."
+        },
+        {
+            "cardImage": "/assets/image3.png",
+            "cardHeader": "Collaborative Learning",
+            "bodyText": "Engage in lively discussions, participate in group challenges, and attend interactive workshops to enhance your skills and stay ahead of the curve. With our supportive community by your side, you'll gain the motivation needed to excel in your job search and beyond."
+        },
+        {
+            "cardImage": "/assets/image4.png",
+            "cardHeader": "Resume and Portfolio Review",
+            "bodyText": "Get expert feedback on your resume and portfolio to craft compelling narratives that highlight your achievements and skills. Our personalized guidance will help you refine your presentation, making you stand out to potential employers."
+        },
+        {
+            "cardImage": "/assets/image5.png",
+            "cardHeader": "Question Banks",
+            "bodyText": "Gain access to comprehensive question banks spanning various industries and job roles. Anticipate interview questions confidently and craft compelling responses with our extensive resources. Prepare thoroughly and approach interviews with assurance."
+        },
+        {
+            "cardImage": "/assets/image6.png",
+            "cardHeader": "Progress Tracking",
+            "bodyText": "Track your progress with insightful analytics, ensuring continuous improvement and readiness for any interview scenario. Gain valuable insights into your strengths and areas for growth, empowering you to refine your preparation strategy effectively."
+        }
+    ],
+    "frontendCards": [
+        {
+            "image": "/assets/interview.png",
+            "heading": "Interview Questions and Videos",
+            "bodyText": "Crisp videos and expertly curated questions to sharpen your interview skills.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend1.png",
+            "heading": "React Crash Course",
+            "bodyText": "Dive into React with our concise crash course and master the fundamentals in no time.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend2.png",
+            "heading": "JavaScript Crash Course",
+            "bodyText": "Elevate your JavaScript skills with our crash course, designed to get you up to speed swiftly.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend3.png",
+            "heading": "Sass Crash Course",
+            "bodyText": "Boost your CSS styling skills with our Sass crash course and build websites seamlessly.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend4.png",
+            "heading": "HTML Crash Course",
+            "bodyText": "Master HTML basics swiftly with our crash course for efficient web development.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend5.png",
+            "heading": "CSS Crash Course",
+            "bodyText": "Elevate your styling skills quickly with our CSS crash course, creating visually stunning websites.",
+            "button": "Get Started"
+        }
+    ],
+    "backendCards": [
+        {
+            "image": "/assets/interview.png",
+            "heading": "Interview Questions and Videos",
+            "bodyText": "Crisp videos and expertly curated questions to sharpen your interview skills.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend1.png",
+            "heading": "Python",
+            "bodyText": "Master Python fundamentals with our crash course, covering syntax, data structures, and control flow.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend2.png",
+            "heading": "C Language",
+            "bodyText": "Learn essential C-language skills necessary to build reliable applications.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend3.png",
+            "heading": "Java",
+            "bodyText": "Explore the robust backend ability from enterprise applications to web services and much more.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend4.png",
+            "heading": "PHP",
+            "bodyText": "Embark on a journey into PHP, the server-side scripting language powering majority of websites.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend5.png",
+            "heading": "Node.js",
+            "bodyText": "Unleash the power of JavaScript on the server-side with Node.js, mastering backend applications.",
+            "button": "Get Started"
+        }
+    ],
+    "devOpsCards": [
+        {
+            "image": "/assets/interview.png",
+            "heading": "Interview Questions and Videos",
+            "bodyText": "Crisp videos and expertly curated questions to sharpen your interview skills.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops1.png",
+            "heading": "Bash",
+            "bodyText": "Master Bash scripting necessary to automate runtime tasks and streamline DevOps workflows.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops2.png",
+            "heading": "Powershell",
+            "bodyText": "Learn PowerShell fundamentals of DevOps, including cmdlets, pipelines, and scripting.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops3.png",
+            "heading": "Perl",
+            "bodyText": "Master Perl's fundamentals for DevOps operation, including regular expressions.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops4.png",
+            "heading": "Git and Github",
+            "bodyText": "Master Git fundamentals and skills like branching, pushing, committing, and more.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops5.png",
+            "heading": "Docker",
+            "bodyText": "Learn Docker essentials, like container creation, image management, and more.",
+            "button": "Get Started"
+        }
+    ]
+}

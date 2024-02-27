@@ -1,26 +1,27 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Product from "./components/Product";
-import Signup from "./components/Signup";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Lang from "./components/Lang";
-import Footer from "./components/Footer";
+
+
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Product from "./pages/Product";
+import Contact from "./pages/Contact";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Product />
-      <Lang />
-      <Signup />
-      <About />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<Signup />} />
+        {/* Add more routes as needed */}
+      </Routes>
     </>
+    
   );
 }
 
