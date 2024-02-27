@@ -6,16 +6,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#00df9a',
-        'dark-green': '#008369',
-        'light-green': '#b2ffe7',
-        'dark-grey': '#333333',
-        'light-grey': '#f2f2f2',
+        'primary': '#2dce9c',
+        'dark-green': '#07271D',
+        'light-grey': '#f7f7f7',
+        'grey': '#f5f5f5',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
-      }
+      },
+      boxShadow: { 
+        'outline-green': '0 0 0 3px rgba(0, 200, 150, 0.5)',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['hover'],
+      textColor: ['hover'],
+      borderColor: ['hover'],
     },
   },
   plugins: [],

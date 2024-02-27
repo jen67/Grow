@@ -740,7 +740,6 @@
             ]
         }
     ],
-
     "platformCards": [
         {
             "cardImage": "/assets/image1.png",
@@ -771,6 +770,120 @@
             "cardImage": "/assets/image6.png",
             "cardHeader": "Progress Tracking",
             "bodyText": "Track your progress with insightful analytics, ensuring continuous improvement and readiness for any interview scenario. Gain valuable insights into your strengths and areas for growth, empowering you to refine your preparation strategy effectively."
+        }
+    ],
+    "frontendCards": [
+        {
+            "image": "/assets/interview.png",
+            "heading": "Interview Questions and Videos",
+            "bodyText": "Crisp videos and expertly curated questions to sharpen your interview skills.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend1.png",
+            "heading": "React Crash Course",
+            "bodyText": "Dive into React with our concise crash course and master the fundamentals in no time.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend2.png",
+            "heading": "JavaScript Crash Course",
+            "bodyText": "Elevate your JavaScript skills with our crash course, designed to get you up to speed swiftly.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend3.png",
+            "heading": "Sass Crash Course",
+            "bodyText": "Boost your CSS styling skills with our Sass crash course and build websites seamlessly.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend4.png",
+            "heading": "HTML Crash Course",
+            "bodyText": "Master HTML basics swiftly with our crash course for efficient web development.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/frontend5.png",
+            "heading": "CSS Crash Course",
+            "bodyText": "Elevate your styling skills quickly with our CSS crash course, creating visually stunning websites.",
+            "button": "Get Started"
+        }
+    ],
+    "backendCards": [
+        {
+            "image": "/assets/interview.png",
+            "heading": "Interview Questions and Videos",
+            "bodyText": "Crisp videos and expertly curated questions to sharpen your interview skills.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend1.png",
+            "heading": "Python",
+            "bodyText": "Master Python fundamentals with our crash course, covering syntax, data structures, and control flow.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend2.png",
+            "heading": "C Language",
+            "bodyText": "Learn essential C-language skills necessary to build reliable applications.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend3.png",
+            "heading": "Java",
+            "bodyText": "Explore the robust backend ability from enterprise applications to web services and much more.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend4.png",
+            "heading": "PHP",
+            "bodyText": "Embark on a journey into PHP, the server-side scripting language powering majority of websites.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/backend5.png",
+            "heading": "Node.js",
+            "bodyText": "Unleash the power of JavaScript on the server-side with Node.js, mastering backend applications.",
+            "button": "Get Started"
+        }
+    ],
+    "devOpsCards": [
+        {
+            "image": "/assets/interview.png",
+            "heading": "Interview Questions and Videos",
+            "bodyText": "Crisp videos and expertly curated questions to sharpen your interview skills.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops1.png",
+            "heading": "Bash",
+            "bodyText": "Master Bash scripting necessary to automate runtime tasks and streamline DevOps workflows.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops2.png",
+            "heading": "Powershell",
+            "bodyText": "Learn PowerShell fundamentals of DevOps, including cmdlets, pipelines, and scripting.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops3.png",
+            "heading": "Perl",
+            "bodyText": "Master Perl's fundamentals for DevOps operation, including regular expressions.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops4.png",
+            "heading": "Git and Github",
+            "bodyText": "Master Git fundamentals and skills like branching, pushing, committing, and more.",
+            "button": "Get Started"
+        },
+        {
+            "image": "/assets/devops5.png",
+            "heading": "Docker",
+            "bodyText": "Learn Docker essentials, like container creation, image management, and more.",
+            "button": "Get Started"
         }
     ]
 }
