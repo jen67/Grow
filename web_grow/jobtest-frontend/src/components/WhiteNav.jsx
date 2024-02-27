@@ -11,28 +11,28 @@ function Navbar() {
   }
 
   return (
-    <div className="flex justify-between items-center h-16  mx-auto  px-4  md:px-16 lg:px-20 text-black bg-white cursor-pointer font font-roboto shadow-lg">
+    <div className="flex justify-between items-center h-20  mx-auto  px-6  md:px-10 lg:px-20 text-black bg-white cursor-pointer font font-roboto shadow-lg">
       <header className="w-full">
         <img src={logo} alt="logo" className="w-48" />
       </header>
       <ul className="hidden md:flex">
-        <li className="p-4 border-b-4 border-transparent  hover:border-dark-green transition duration-200 ease-in-out font-roboto">
+        <li className="p-4 lg:p-4 md:px-2 md:py-4 border-b-4 border-transparent  hover:border-dark-green transition duration-200 ease-in-out font-roboto">
           <Link to="/">Home</Link>
         </li>
 
-        <li className="p-4 border-b-4 border-transparent  hover:border-dark-green transition duration-200 ease-in-out font-roboto">
+        <li className="p-4 lg:p-4 md:px-2 md:py-4 border-b-4 border-transparent  hover:border-dark-green transition duration-200 ease-in-out font-roboto">
           <Link to="/About">About</Link>
         </li>
 
-        <li className="p-4 border-b-4 border-transparent  hover:border-dark-green transition duration-200 ease-in-out font-roboto">
+        <li className="p-4 lg:p-4 md:px-2 md:py-4 border-b-4 border-transparent  hover:border-dark-green transition duration-200 ease-in-out font-roboto">
           <Link to="/Product">Product</Link>
         </li>
 
-        <li className="p-4 border-b-4 border-transparent  hover:border-dark-green transition duration-200 ease-in-out font-roboto">
+        <li className="p-4 lg:p-4 md:px-2 md:py-4 border-b-4 border-transparent  hover:border-dark-green transition duration-200 ease-in-out font-roboto">
           <Link to="/Contact">Contact</Link>
         </li>
 
-        <button className="bg-dark-green text-white rounded-lg px-8 py-2 m-2  inline-block flex whitespace-nowrap hidden md:inline-block  hover:ring-2 hover:ring-primary">
+        <button className="bg-dark-green text-white rounded-lg px-8 py-2 m-2 whitespace-nowrap hidden md:inline-block  hover:ring-2 hover:ring-primary">
           <Link to="/signUP">Get Started</Link>
         </button>
       </ul>

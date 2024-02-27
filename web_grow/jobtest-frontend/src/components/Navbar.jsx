@@ -11,29 +11,29 @@ function Navbar() {
   }
 
   return (
-    <div className="flex justify-between items-center h-16  mx-auto  px-4 md:px-16 lg:px-20 text-white cursor-pointer font-roboto">
+    <div className="flex justify-between items-center h-20 md:py-16  mx-auto  px-6 md:px-10 lg:px-20 text-white cursor-pointer font-roboto ">
       <header className="w-full">
-        <img src={logo} alt="logo" className="w-48" />
+        <img src={logo} alt="logo" className="w-48 " />
       </header>
       <ul className="hidden md:flex">
-        <li className="p-4 border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
+        <li className=" p-4 lg:p-4 md:px-2 md:py-4 md:border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
           <Link to="/">Home</Link>
         </li>
 
-        <li className="p-4 border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
+        <li className=" p-4 lg:p-4 md:px-2 md:py-4 md:border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
           <Link to="/About">About</Link>
         </li>
 
-        <li className="p-4 border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
+        <li className=" p-4 lg:p-4 md:px-2 md:py-4 md:border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
           <Link to="/Product">Product</Link>
         </li>
 
-        <li className="p-4 border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
+        <li className=" p-4 lg:p-4 md:px-2 md:py-4 md:border-b-4 border-transparent hover:border-primary transition duration-200 ease-in-out">
           <Link to="/Contact">Contact</Link>
         </li>
       </ul>
 
-      <button className="bg-primary text-black rounded-lg px-8 py-2 m-2  inline-block flex whitespace-nowrap hidden md:inline-block  hover:ring-2 hover:ring-grey">
+      <button className="bg-primary text-black rounded-lg px-8 py-2 m-2 whitespace-nowrap hidden md:inline-block hover:ring-2 hover:ring-grey">
         <Link to="/signUP">Get Started</Link>
       </button>
 
