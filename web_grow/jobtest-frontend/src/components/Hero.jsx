@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+import {Link} from "react-router-dom"
 
 function Hero() {
   return (
@@ -23,7 +24,7 @@ function Hero() {
           />
         </div>
         <button className="bg-primary w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black font-roboto hover:ring-4 hover:ring-grey transition">
-          Get Started
+         <Link to="/SignUp">Get Started </Link>
         </button>
       </div>
     </div>
