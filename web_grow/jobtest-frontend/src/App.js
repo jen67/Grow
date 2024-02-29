@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         {/* Add more routes as needed */}
       </Routes>
     </>

@@ -1,12 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/WhiteNav";
-
 
 function Product() {
   return (
     <div className="bg-white">
       <Navbar />
-      <h1>Product</h1>
+      <Link to="/dashboard">Product</Link>
     </div>
   );
 }

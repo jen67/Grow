@@ -42,7 +42,8 @@ function SignUp() {
             Welcome To Grow
           </h1>
           <p className="mb-8  md:mb-12 text-center ">
-            We are happy to have you here. Create a free account to enjoy our services and prepare for interviews. We always got you covered.
+            We are happy to have you here. Create a free account to enjoy our
+            services and prepare for interviews. We always got you covered.
           </p>
         </div>
         <form
@@ -102,7 +103,10 @@ function SignUp() {
             SIGN UP
           </button>
           <p className="mt-4 text-center text-[#646464]">
-            Already have an account? <Link to="/Login" className="text-black pl-2">Login</Link>
+            Already have an account?{" "}
+            <Link to="/Login" className="text-black pl-2 underline">
+              Login
+            </Link>
           </p>
         </form>
       </div>

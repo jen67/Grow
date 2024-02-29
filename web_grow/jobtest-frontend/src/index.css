@@ -3,6 +3,51 @@
 @tailwind utilities;
 
 body {
-    background-color: #000300;
+  background-color: #000300;
 }
 
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-primary-100: hsl(205, 15%, 58%);
+  --clr-primary-400: hsl(215, 25%, 27%);
+  --clr-primary-800: hsl(217, 33%, 17%);
+  --clr-primary-900: hsl(218, 33%, 9%);
+}
+
+.lang-button {
+  padding: 10px;
+  background: var(--clr-primary-800);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-800);
+  transition: background-color 0.3s ease;
+}
+
+.scroller {
+  width: 100%;
+}
+
+.animate-scroll {
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.fade-left {
+  background: linear-gradient(to right, black, transparent);
+}
+
+.fade-right {
+  background: linear-gradient(to left, black, transparent);
+}

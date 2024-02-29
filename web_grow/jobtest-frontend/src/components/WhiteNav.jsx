@@ -66,9 +66,7 @@ function Navbar() {
       </div>
 
       {nav && (
-        <div
-          className="fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white text-black ease-in-out duration-300"
-        >
+        <div className="fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white text-black ease-in-out duration-300">
           <header className="w-full pt-5 m-4">
             <img src={logo} alt="logo" className="w-48" />
           </header>

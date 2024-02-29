@@ -43,9 +43,11 @@ function Login() {
         <form
           className=" flex flex-col max-w-xl w-[90vw] px-4 mb-9 md:mb-28 md:px-8 bg-grey py-9 rounded-xl"
           onSubmit={handleSubmit}
-              >
-                  
-                  <h1 className=" font-inter text-3xl md:text-4xl font-bold mb-4 text-left text-dark-green">  Login</h1>
+        >
+          <h1 className=" font-inter text-3xl md:text-4xl font-bold mb-4 text-left text-dark-green">
+            {" "}
+            Login
+          </h1>
           <div className="mb-4">
             <input
               className="w-full px-3 py-4 border  border-gray-300 rounded-md outline-none hover:border hover:border-gray-900 focus:border focus:border-gray-900"
@@ -75,17 +77,17 @@ function Login() {
             LOGIN
           </button>
           <div className="flex flex-col md:flex-row justify-between items-center md:pt-2">
-              <p className="mt-4 text-center text-[#646464]">
-                Don't have an account yet?{" "}
-                <Link to="/signup" className="text-black pl-2">
-                  SignUp
-                </Link>
-              </p>
-              <p className="mt-2 text-center md:mt-4 text-[#646464]">
-                <Link to="/forgotpassword" className="text-black">
-                  Forgotten password?
-                </Link>
-              </p>
+            <p className="mt-4 text-center text-[#646464]">
+              Don't have an account yet?{" "}
+              <Link to="/signup" className="text-black pl-2 underline">
+                SignUp
+              </Link>
+            </p>
+            <p className="mt-2 text-center md:mt-4 text-[#646464]">
+              <Link to="/forgotpassword" className="text-black underline">
+                Forgotten password?
+              </Link>
+            </p>
           </div>
         </form>
       </div>
