@@ -1,16 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/WhiteNav";
-import Footer from "../components/Footer";
+import Greynavbar from "../components/Greynav";
 import Courses from "../components/Courses";
+import Footer from "../components/Footer";
 
 function Product() {
+  
+
   return (
     <div className="">
-      <Navbar />
-      <Courses />
+      <div className="bg-gray-200">
+        <Greynavbar />
+        <Courses />
 
-      <Link to="/dashboard">Product</Link>
+        {/* <Link to="/dashboard">Product</Link> */}
+      </div>
       <Footer />
     </div>
   );

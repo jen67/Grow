@@ -26,6 +26,7 @@ module.exports = {
         "outline-green": "0 0 0 3px rgba(0, 200, 150, 0.5)",
         light: "0 10px 15px rgba(255, 255, 255, 0.1)",
         'custom': '2px 0px 12px 8px rgba(0,0,0,0.1)', // Add your custom box-shadow here
+        'navshadow': ' rgba(0, 0, 0, 0.24) 0px 3px 8px',
       },
       animation: {
         scroll: 'scroll 40s linear infinite',
