@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Navbar from "../components/WhiteNav";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,6 +19,7 @@ function Login() {
       console.log({ email, password });
       setIsModalOpen(true);
     }
+   
   };
 
   const validate = (email, password) => {
@@ -100,8 +102,9 @@ function Login() {
                 setEmail("");
                 setPassword("");
                 setErrors({});
+                navigate("/dashboard");
               }}
-              className="absolute top-2 right-2 text-lg font-bold"
+              className="absolute top-2 right-8 text-lg font-bold"
             >
               X
             </button>

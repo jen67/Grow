@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/WhiteNav";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
   const [fullname, setFullname] = useState("");
@@ -10,6 +10,8 @@ function SignUp() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -32,6 +34,17 @@ function SignUp() {
       errors.email = "Email is not valid.";
     return errors;
   };
+
+   const closeModalAndRedirect = () => {
+     setIsModalOpen(false);
+     setFullname("");
+     setEmail("");
+     setPassword("");
+     setConfirmPassword("");
+     setErrors({});
+     navigate("/Login"); // Redirect to login page
+   };
+
 
   return (
     <div>
@@ -114,15 +127,9 @@ function SignUp() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white px-10 py-16 rounded-md relative w-[90vw] md:max-w-[40vw]">
             <button
-              onClick={() => {
-                setIsModalOpen(false);
-                setFullname("");
-                setEmail("");
-                setPassword("");
-                setConfirmPassword("");
-                setErrors({});
-              }}
-              className="absolute top-2 right-2 text-lg font-bold"
+              onClick={closeModalAndRedirect}
+                
+              className="absolute top-2 right-8 text-lg font-bold"
             >
               X
             </button>
