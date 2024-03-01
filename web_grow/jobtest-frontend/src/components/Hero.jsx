@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 function Hero() {
   return (
-    <div className="text-white">
+    <div className="text-white bg-black">
       <div className="max-w-[900px]  w-full py-32 mx-auto text-center flex flex-col justify-center">
         <h1 className="uppercase md:text-[4rem] sm:text-5xl text-4xl font-bold md:py-6 font-inter">
           Ace Your Job Interviews with Grow app

@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import OurVission from "../assets/vision.jpg";
 import OurMission from "../assets/Mission.jpg";
 import Gift from "../assets/Gift.png";
 import Eniola from "../assets/Eniola.webp";
 import Justine from "../assets/Justine.png";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 function AboutUs() {
     return (
-      <div>
+      <div className="bg-black">
         <Navbar />
         <div className="py-32 text-white mx-auto px-4 bg-black flex flex-col items-center text-center justify-center w-full max-w-[900px] font-roboto">
           <h1 className="md:text-[4rem] sm:text-5xl text-4xl font-bold md:py-6 font-inter ">
@@ -75,7 +75,9 @@ function AboutUs() {
               alt="Enioloa Agbalu"
               className="rounded-full border-green-500 border-2 w-[150px] h-[150px]"
             />
-            <h2 className="text-xl font-bold mt-4 font-inter">Enioloa Agbalu</h2>
+            <h2 className="text-xl font-bold mt-4 font-inter">
+              Enioloa Agbalu
+            </h2>
             <p className="text-center py-4">
               Eniola is a dedicated backend developer with some years of
               experience. She specializes in the use of python, C language, node
