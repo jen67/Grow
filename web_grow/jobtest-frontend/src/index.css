@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   background-color: #000300;
-}
+} */
 
 :root {
   --clr-neutral-100: hsl(0, 0%, 100%);

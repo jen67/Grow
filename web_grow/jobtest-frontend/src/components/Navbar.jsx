@@ -6,7 +6,7 @@ import logo from "../assets/DarkThemeLogo.png";
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const [atBottom, setAtBottom] = useState(false);
 
   function handleNav() {
     setNav(!nav);
@@ -15,8 +15,14 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 50;
+      const isAtBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight ||
+        document.body.offsetHeight <= window.innerHeight;
       if (isScrolled !== scrolled) {
         setScrolled(!scrolled);
+      }
+      if (isAtBottom !== atBottom) {
+        setAtBottom(isAtBottom);
       }
     };
 
@@ -25,14 +31,20 @@ function Navbar() {
       // cleanup
       document.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolled]);
+  }, [scrolled, atBottom]);
+
+  if (atBottom) {
+    return null;
+  }
 
 
   return (
     <>
-      <div className={`flex justify-between items-center h-20 md:py-16  mx-auto  px-6 md:px-10 lg:px-20 text-white cursor-pointer font-roboto bg-black z-50 ${scrolled
-          ? "fixed top-0 w-full shadow-md bg-black backdrop-blur-md  bg-opacity-90"
-          : "bg-black"
+      <div
+        className={`flex justify-between items-center h-20 md:py-8 mx-auto px-6 md:px-10 lg:px-20 text-white cursor-pointer font-roboto bg-black z-50 ${
+          scrolled
+            ? "fixed top-0 w-full shadow-md bg-black backdrop-blur-md  bg-opacity-90"
+            : "bg-black"
         } `}
       >
         <header className="w-full">
@@ -66,11 +78,7 @@ function Navbar() {
       </div>
 
       {nav && (
-        <div
-          className=
-          
-          "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-300 z-50"
-        >
+        <div className="fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-300 z-50">
           <header className="w-full pt-5 m-4">
             <img src={logo} alt="logo" className="w-48" />
           </header>
@@ -106,6 +114,4 @@ function Navbar() {
   );
 }
 
-
 export default Navbar;
-

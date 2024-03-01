@@ -6,6 +6,7 @@ import logo from "../assets/LightThemeLogo.png";
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [atBottom, setAtBottom] = useState(false);
 
   function handleNav() {
     setNav(!nav);
@@ -14,17 +15,29 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 50;
+      const isMobile = window.innerWidth <= 768;
+      const docHeight = isMobile
+        ? document.body.scrollHeight
+        : document.documentElement.scrollHeight;
+      const isAtBottom = window.innerHeight + window.scrollY >= docHeight;
       if (isScrolled !== scrolled) {
         setScrolled(!scrolled);
       }
+      if (isAtBottom !== atBottom) {
+        setAtBottom(isAtBottom);
+      }
     };
 
-    document.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       // cleanup
-      document.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolled]);
+  }, [scrolled, atBottom]);
+
+  if (atBottom) {
+    return null;
+  }
 
   return (
     <>

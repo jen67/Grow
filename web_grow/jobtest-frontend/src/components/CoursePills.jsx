@@ -5,8 +5,8 @@ function SkillScroll() {
   const skills = ["Array", "Recursion", "Hash Table", "Big O", "Graphs", "Strings", "Linked list", "Stack and ques", "Team-work", "Searching and sorting", "Dynamic Programming", "collaboration", "co-oporation"];
 
   return (
-    <>
-      <h3 className="text-white text-center my-4 text-base md:text-3xl font-bold font-inter">
+    <div className="bg-black mt-[-1rem] py-12">
+      <h3 className="text-white text-center py-4 text-base md:text-3xl font-bold font-inter">
         {" "}
         Topics covered{" "}
       </h3>
@@ -32,7 +32,7 @@ function SkillScroll() {
         <div className="fade-left absolute top-0 bottom-0 left-0 w-10"></div>
         <div className="fade-right absolute top-0 bottom-0 right-0 w-10"></div>
       </div>
-    </>
+    </div>
   );
 }
 

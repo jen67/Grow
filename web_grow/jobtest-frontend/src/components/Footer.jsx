@@ -17,7 +17,7 @@ import logo from "../assets/DarkThemeLogo.png";
 
 function Footer() {
   return (
-    <div className="mx-auto py-16 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row md:space-evenly items-center justify-center text-center gap-7 text-gray-300 w-full">
+    <div className="mx-auto py-16 px-6 md:px-10 lg:px-20 flex flex-col md:flex-row md:space-evenly items-center justify-center text-center gap-7 bg-black text-gray-300 w-full">
       <div className="md:w-1/4">
         <header className="w-full">
           <img src={logo} alt="logo" className="w-48 " />
