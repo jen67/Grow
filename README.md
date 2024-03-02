@@ -9,6 +9,10 @@
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT">
 </p>
 
+
+# Update
+-We are still working on this app
+
 ## 🚀 About
 
 GROW is a cutting-edge platform designed to prepare individuals for tech-based interviews. We provide a comprehensive suite of resources, practice questions, and personalized feedback to help users succeed in their interviews.
