@@ -72,7 +72,7 @@ function SignUp() {
               onChange={(e) => setFullname(e.target.value)}
             />
             {errors.fullname && (
-              <p className="text-red-500">{errors.fullname}</p>
+              <p className="text-red-500 text-[13px]">{errors.fullname}</p>
             )}
           </div>
           <div className="mb-4">
@@ -83,7 +83,9 @@ function SignUp() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            {errors.email && <p className="text-red-500">{errors.email}</p>}
+            {errors.email && (
+              <p className="text-red-500 text-[13px]">{errors.email}</p>
+            )}
           </div>
           <div className="mb-4">
             <input
@@ -94,7 +96,7 @@ function SignUp() {
               onChange={(e) => setPassword(e.target.value)}
             />
             {errors.password && (
-              <p className="text-red-500">{errors.password}</p>
+              <p className="text-red-500 text-[13px]">{errors.password}</p>
             )}
           </div>
           <div className="mb-4">
@@ -106,7 +108,9 @@ function SignUp() {
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
             {errors.confirmPassword && (
-              <p className="text-red-500">{errors.confirmPassword}</p>
+              <p className="text-red-500 text-[13px]">
+                {errors.confirmPassword}
+              </p>
             )}
           </div>
           <button
@@ -128,7 +132,6 @@ function SignUp() {
           <div className="bg-white px-10 py-16 rounded-md relative w-[90vw] md:max-w-[40vw]">
             <button
               onClick={closeModalAndRedirect}
-                
               className="absolute top-2 right-8 text-lg font-bold"
             >
               X

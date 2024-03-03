@@ -13,10 +13,11 @@ module.exports = {
       display: ["responsive", "hover", "focus"],
       flex: ["responsive", "hover", "focus"],
       colors: {
-        primary: "#2dce9c",
+        "primary": "#2dce9c",
+        "secondary": "#25a474",
         "dark-green": "#07271D",
         "light-grey": "#f7f7f7",
-        grey: "#f5f5f5",
+        "grey": "#f5f5f5",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
