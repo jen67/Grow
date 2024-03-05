@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../assets/LightThemeLogo.png";
-import { FaUser, FaBook, FaCog, FaTimes, FaThLarge } from 'react-icons/fa';
+import { FaUser, FaBook, FaCog, FaThLarge } from 'react-icons/fa';
 
 function Dashboard() {
         const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +71,10 @@ function Dashboard() {
                         </button>
                     </header>
                     <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
-                        {/* Dashboard content goes here */}
+                        
+                            
+
+                        
                     </main>
                 </div>
             </div>
