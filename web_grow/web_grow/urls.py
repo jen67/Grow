@@ -25,9 +25,9 @@ router = routers.DefaultRouter()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('api/jobtest/urls', include(router.urls)),
-    path('api-auth/', include('users.urls')),
-    path('api-auth/', include('rest_framework.urls')),
-    path('api-auth/', include('drf_social_oauth2.urls',namespace='drf')),
+    path('jobtest/', include('jobtest.urls')),
+    path('users/', include('users.urls')),
+    path('api/', include('rest_framework.urls')),
+    path('api/', include('drf_social_oauth2.urls',namespace='drf')),
     path('oauth/', include('social_django.urls')),
 ]

@@ -1,10 +1,17 @@
-from django.contrib.auth import authenticate
+from django.contrib.sites.shortcuts import get_current_site
+from rest_framework.authentication import TokenAuthentication
+from django.template.loader import render_to_string
+from django.core.mail import EmailMessage
+from django.utils.http import urlsafe_base64_encode
+from django.utils.encoding import force_bytes
+from django.contrib.auth.tokens import default_token_generator
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework import status, generics
 from rest_framework.response import Response  
 from .serializers import RegistrationSerializer, UsersSerializer
 from rest_framework import permissions
+from rest_framework.permissions import IsAuthenticated
 from .models import CustomUser
 from rest_framework.authtoken.models import Token
 import requests
@@ -15,19 +22,33 @@ class CreateAccount(APIView):
     """ signup new user """
     permission_classes = [permissions.AllowAny]
 
-    def post(self,request):
+    def post(self, request):
         register = RegistrationSerializer(data=request.data)
         if register.is_valid():
             new_user = register.save()
             if new_user:
-                r = requests.post('http://127.0.0.1:8000/api-auth/token', data = {
-                    'username':new_user.email,
-                    'password':request.data['password'],
-                    'client_id':'Your Client ID',
-                    'client_secret':'Your Client Secret',
-                    'grant_type':'password'
+                # Generate a verification token for the new user
+                token_generator = default_token_generator
+                uid = urlsafe_base64_encode(force_bytes(new_user.pk))
+                token = token_generator.make_token(new_user)
+
+                # Send an email with the verification link
+                current_site = get_current_site(request)
+                mail_subject = 'Activate your account'
+                message = render_to_string('activation_email.html', {
+                     'user': new_user,
+                     'domain': current_site.domain,
+                     'uid': uid,
+                     'token': token,
                 })
-                return Response(r.json(), status=status.HTTP_201_CREATED)
+                to_email = new_user.email
+                email = EmailMessage(
+                    mail_subject, message, to=[to_email]
+                )
+                email.send()
+
+                # Response indicating successful registration
+                return Response({'message': 'Please check your email to activate your account.'}, status=status.HTTP_201_CREATED)
         return Response(register.errors,status=status.HTTP_400_BAD_REQUEST)
 
 
